@@ -40,15 +40,15 @@ CLASSES = ["bicycle", "bridge", "bus", "car", "chimney", "crosswalk", "hydrant",
 YOLO_CLASSES = ['bicycle', 'bridge', 'bus', 'car', 'chimney', 'crosswalk', 'hydrant', 'motorcycle', 'mountain', 'other', 'palm', 'traffic']
 MODEL = "YOLO" # "YOLO"
 TYPE1 = True #one time image selection
-TYPE2 = False #segmentation problem
-TYPE3 = False #dynamic captcha
+TYPE2 = True #segmentation problem
+TYPE3 = True #dynamic captcha
 ENABLE_LOGS = True
 ENABLE_VPN = False
 ENABLE_MOUSE_MOVEMENT = True
 ENABLE_NATURAL_MOUSE_MOVEMENT = True
 ENABLE_COOKIES = True
-PATH_TO_FIREFOX_PROFILE = '.../Application Support/Firefox/Profiles/wtjovf77.default-release'
-#PATH_TO_FIREFOX_PROFILE=r"C:\Users\Umais\AppData\Roaming\Mozilla\Firefox\Profiles\sx2qlajx.default-release"
+#PATH_TO_FIREFOX_PROFILE = '.../Application Support/Firefox/Profiles/wtjovf77.default-release'
+PATH_TO_FIREFOX_PROFILE=r"C:\Users\Umais\AppData\Roaming\Mozilla\Firefox\Profiles\sx2qlajx.default-release"
 def set_variables(variables):
     global CAPTCHA_URL, THRESHOLD, USE_TOP_N_STRATEGY, N, CLASSES, YOLO_CLASSES, MODEL, TYPE1, TYPE2, TYPE3, ENABLE_LOGS, ENABLE_VPN, ENABLE_MOUSE_MOVEMENT, ENABLE_NATURAL_MOUSE_MOVEMENT, ENABLE_COOKIES
     if 'CAPTCHA_URL' in variables:

@@ -102,7 +102,18 @@ solve_recaptcha.py code line 51
 PATH_TO_FIREFOX_PROFILE = '.../Application Support/Firefox/Profiles/wtjovf77.default-release'
 ```
 ## Installation
+
+#### Create env 
+```
+conda create -n myenv python=3.9
+
+conda activate myenv
+
+```
+
 1. Clone the repository
+
+
 
 2. Install the required libraries:
    ```
@@ -117,7 +128,7 @@ PATH_TO_FIREFOX_PROFILE = '.../Application Support/Firefox/Profiles/wtjovf77.def
   ```
   pip install tensorflow
   ```
-  
+
 3. Download and set up Geckodriver:
    - Download Geckodriver from the official website: [Geckodriver Releases](https://github.com/mozilla/geckodriver/releases)
    - Extract the downloaded archive and add the path to the `geckodriver` executable to your system's PATH environment variable.
