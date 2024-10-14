@@ -31,7 +31,6 @@ import os
 # Disable oneDNN optimizations
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 
-
 # Constants
 CAPTCHA_URL = "https://www.google.com/recaptcha/api2/demo"
 THRESHOLD = 0.2
