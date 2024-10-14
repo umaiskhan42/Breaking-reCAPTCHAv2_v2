@@ -48,8 +48,8 @@ ENABLE_VPN = False
 ENABLE_MOUSE_MOVEMENT = True
 ENABLE_NATURAL_MOUSE_MOVEMENT = True
 ENABLE_COOKIES = True
-# PATH_TO_FIREFOX_PROFILE = '.../Application Support/Firefox/Profiles/wtjovf77.default-release'
-PATH_TO_FIREFOX_PROFILE=r"C:\Users\Umais\AppData\Roaming\Mozilla\Firefox\Profiles\sx2qlajx.default-release"
+PATH_TO_FIREFOX_PROFILE = '.../Application Support/Firefox/Profiles/wtjovf77.default-release'
+#PATH_TO_FIREFOX_PROFILE=r"C:\Users\Umais\AppData\Roaming\Mozilla\Firefox\Profiles\sx2qlajx.default-release"
 def set_variables(variables):
     global CAPTCHA_URL, THRESHOLD, USE_TOP_N_STRATEGY, N, CLASSES, YOLO_CLASSES, MODEL, TYPE1, TYPE2, TYPE3, ENABLE_LOGS, ENABLE_VPN, ENABLE_MOUSE_MOVEMENT, ENABLE_NATURAL_MOUSE_MOVEMENT, ENABLE_COOKIES
     if 'CAPTCHA_URL' in variables:

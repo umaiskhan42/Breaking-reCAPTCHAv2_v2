@@ -80,7 +80,6 @@ If everything is set up correctly, it should display the installed Geckodriver v
 
 ## Now set up your firefox user profile and add to the code 
 
-
 1. Firefox Profile Path :
 
 Modify the Firefox profile path in the script to point to a valid Firefox profile on your Windows machine:
@@ -96,8 +95,12 @@ Copy this path and update the PATH_TO_FIREFOX_PROFILE variable in solve_recaptch
 ```
 PATH_TO_FIREFOX_PROFILE = r"C:\Users\<YourUsername>\AppData\Roaming\Mozilla\Firefox\Profiles\<random-string>.default-release"
 ```
+Replace in: 
 
-
+solve_recaptcha.py code line 51
+```
+PATH_TO_FIREFOX_PROFILE = '.../Application Support/Firefox/Profiles/wtjovf77.default-release'
+```
 ## Installation
 1. Clone the repository
 
@@ -109,6 +112,10 @@ PATH_TO_FIREFOX_PROFILE = r"C:\Users\<YourUsername>\AppData\Roaming\Mozilla\Fire
 3. Download and set up Geckodriver:
    - Download Geckodriver from the official website: [Geckodriver Releases](https://github.com/mozilla/geckodriver/releases)
    - Extract the downloaded archive and add the path to the `geckodriver` executable to your system's PATH environment variable.
+
+# VPN 
+### Connect your system to vpn. If not the code will still run. 
+
 
 ## Usage
 - Run `solve_recaptcha.py` to solve a single reCAPTCHA challenge:
