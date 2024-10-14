@@ -66,6 +66,26 @@ geckodriver --version
 ```
 If everything is set up correctly, it should display the installed Geckodriver version.
 
+
+## Now set up your firefox user profile and add to the code 
+
+
+1. Firefox Profile Path :
+
+Modify the Firefox profile path in the script to point to a valid Firefox profile on your Windows machine:
+
+Open Firefox.
+In the address bar, type about:profiles and press Enter.
+
+Locate the path of your active profile under Root Directory. It will look something like C:\Users\<YourUsername>\AppData\Roaming\Mozilla\Firefox\Profiles\<random-string>.default-release.
+
+Copy this path and update the PATH_TO_FIREFOX_PROFILE variable in solve_recaptcha.py with the correct profile path.
+
+```
+PATH_TO_FIREFOX_PROFILE = r"C:\Users\<YourUsername>\AppData\Roaming\Mozilla\Firefox\Profiles\<random-string>.default-release"
+```
+
+
 ## Installation
 1. Clone the repository
 
