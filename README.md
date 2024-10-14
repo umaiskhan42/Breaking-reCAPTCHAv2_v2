@@ -16,6 +16,56 @@ Code for the paper `Breaking reCAPTCHAv2` accepted at COMPSAC 2024 (https://arxi
 - Firefox (Geckodriver)
 - Required libraries (see `requirements.txt`)
 
+
+## Before running fix the following: 
+1. Make sure you have firefox browser installed in your system. 
+2. Install gecko driver and add to path.
+
+## Step 1: Download Geckodriver
+Visit the Geckodriver releases page.
+Download the appropriate version for your operating system:
+
+Windows: geckodriver-vX.X.X-win64.zip
+macOS: geckodriver-vX.X.X-macos.tar.gz
+Linux: geckodriver-vX.X.X-linux64.tar.gz
+Extract the downloaded archive to a folder of your choice.
+
+## Step 2: Add Geckodriver to PATH
+### Windows:
+Extract the geckodriver.exe from the downloaded .zip file.
+Move the geckodriver.exe to a location (e.g., C:\geckodriver\).
+
+Add this location to your system’s PATH:
+Open the Start menu, search for Environment Variables, and select Edit the system environment variables.
+In the System Properties window, click Environment Variables.
+In the System variables section, find the Path variable and click Edit.
+Click New, and add the path where geckodriver.exe is located (e.g., C:\geckodriver\).
+Click OK to save and exit.
+
+### macOS/Linux:
+Extract the geckodriver from the .tar.gz file.
+Move the binary to /usr/local/bin:
+
+```
+sudo mv geckodriver /usr/local/bin/
+```
+Ensure that /usr/local/bin is part of your PATH (which it typically is by default). You can verify this by running:
+```
+echo $PATH
+```
+If /usr/local/bin is not in your PATH, you can add it by editing your shell configuration file (~/.bashrc, ~/.zshrc, etc.):
+```
+export PATH=$PATH:/usr/local/bin
+```
+Save the file and run source ~/.bashrc (or source ~/.zshrc) to apply the changes.
+
+## Step 3: Verify Installation
+To confirm that geckodriver is correctly installed, run the following command in your terminal:
+```
+geckodriver --version
+```
+If everything is set up correctly, it should display the installed Geckodriver version.
+
 ## Installation
 1. Clone the repository
 
