@@ -19,27 +19,38 @@ Code for the paper `Breaking reCAPTCHAv2` accepted at COMPSAC 2024 (https://arxi
 
 ## Before running fix the following: 
 1. Make sure you have firefox browser installed in your system. 
+
 2. Install gecko driver and add to path.
 
 ## Step 1: Download Geckodriver
 Visit the Geckodriver releases page.
+
 Download the appropriate version for your operating system:
 
 Windows: geckodriver-vX.X.X-win64.zip
+
 macOS: geckodriver-vX.X.X-macos.tar.gz
+
 Linux: geckodriver-vX.X.X-linux64.tar.gz
+
 Extract the downloaded archive to a folder of your choice.
 
 ## Step 2: Add Geckodriver to PATH
 ### Windows:
 Extract the geckodriver.exe from the downloaded .zip file.
+
 Move the geckodriver.exe to a location (e.g., C:\geckodriver\).
 
 Add this location to your system’s PATH:
+
 Open the Start menu, search for Environment Variables, and select Edit the system environment variables.
+
 In the System Properties window, click Environment Variables.
+
 In the System variables section, find the Path variable and click Edit.
+
 Click New, and add the path where geckodriver.exe is located (e.g., C:\geckodriver\).
+
 Click OK to save and exit.
 
 ### macOS/Linux:
@@ -77,7 +88,8 @@ Modify the Firefox profile path in the script to point to a valid Firefox profil
 Open Firefox.
 In the address bar, type about:profiles and press Enter.
 
-Locate the path of your active profile under Root Directory. It will look something like C:\Users\<YourUsername>\AppData\Roaming\Mozilla\Firefox\Profiles\<random-string>.default-release.
+Locate the path of your active profile under Root Directory. It will look something like 
+C:\Users\<YourUsername>\AppData\Roaming\Mozilla\Firefox\Profiles\<random-string>.default-release.
 
 Copy this path and update the PATH_TO_FIREFOX_PROFILE variable in solve_recaptcha.py with the correct profile path.
 
