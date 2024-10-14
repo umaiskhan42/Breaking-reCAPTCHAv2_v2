@@ -1,16 +1,10 @@
+# find the original code at: 
+https://github.com/aplesner/Breaking-reCAPTCHAv2/tree/main
+
+# All credit goes to the original authors.
+
 # Breaking reCAPTCHAv2
 Code for the paper `Breaking reCAPTCHAv2` accepted at COMPSAC 2024 (https://arxiv.org/abs/2409.08831).
-
-## Introduction
-CAPTCHAs (Completely Automated Public Turing Tests to Tell Computers and Humans Apart) have been a vital security measure on the internet, protecting websites from automated bots and malicious activities. However, with the rapid advancements in machine learning and artificial intelligence, the effectiveness of CAPTCHAs in distinguishing between humans and machines has come into question.
-
-This project focuses on Google's reCAPTCHAv2 system, which is widely used across the web. We aim to analyze the effectiveness of reCAPTCHAv2 in rejecting bots using advanced deep learning models such as YOLO (You Only Look Once). Our research explores the vulnerabilities of image-based CAPTCHAs and develops efficient methods to solve them using state-of-the-art machine learning techniques.
-
-Our main findings include:
-
-- We can solve 100% of the CAPTCHAs presented by reCAPTCHAv2, surpassing the success rates of previous works, which range from 68% to 71%.
-- There is no significant difference in the number of challenges required by humans and bots to solve CAPTCHAs in reCAPTCHAv2, suggesting that current AI technologies can effectively exploit advanced image-based CAPTCHAs.
-- reCAPTCHAv2 heavily relies on cookie and browser history data when evaluating whether a user is human or not, highlighting the importance of considering user-specific data in CAPTCHA design.
 
 
 | CAPTCHA Example | CAPTCHA Result |
